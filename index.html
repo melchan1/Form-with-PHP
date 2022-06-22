@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Formulario / Entrega CDS</h1>
+    <form name="form1" method="post" action="formulario.php">
+        <table align="left" style="border : 1px solid black" >
+            <tr>
+                <td><label for="fecha">Fecha : </label></td>
+                <td><input type="date" id="fecha" name="fecha"></td>
+            </tr>    
+            <tr>  
+                <td><label for="nombre">Nombre : </label></td>
+                <td><input type="text" placeholder = " Ingrese su nombre " id="nombre" name="nombre"></td>
+            </tr> 
+            
+            <tr>  
+                <td><label for="impuestos">Impuestos :</label></td>
+                <td><select  name= "impuestos" id="impuestos">
+                    <option value="10%">10%</option>
+                    <option value="20%">20%</option>
+                </td>
+                </select>
+            </tr> 
+                <tr>
+                    <td><h4>Detalles</h4></td>
+                </tr>
+                
+                <tr>
+                    <td  style="border : 1px solid black" >Codigo</td>
+                    <td  style="border : 1px solid black" >Descripcion</td>
+                    <td  style="border : 1px solid black" >Cantidad</td>
+                    <td  style="border : 1px solid black" >Precio</td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="codigo1" id="codigo1"  size=5 style="width:80px" ></td>
+                    <td><input type="text" name="descripcion1" id="descripcion1" required></td>
+                    <td><input type="number" name="cantidad1" id="cantidad1"  size=5 style="width:50px" ></td>
+                    <td><input type="number" name="precio1" id="precio1"  size=5 style="width:50px" ></td>
+                </tr>
+                <tr>
+                    <td><input  type="number" name="codigo2" id="codigo2"  size=5 style="width:80px"></td>
+                    <td><input type="text"  name="descripcion2" id="descripcion1"   required ></td>
+                    <td><input  type="number" name="cantidad2" id="cantidad2"  size=5 style="width:50px"></td>
+                    <td><input  type="number" name="precio2" id="precio2"  size=5 style="width:50px"></td>
+                </tr>
+                <tr>
+                <td><button type="submit" name="id_enviar" id="id_enviar" value="Enviar"> Enviar </button></td>
+                </tr>
+                
+        </table> 
+        
+
+    </form>
+</body>
+</html>
